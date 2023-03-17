@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+    justify-content: space-between;
+    background-color: #183664;
+    color: white;
+    padding: 20px;
+   
+}
+
+.logotipo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
