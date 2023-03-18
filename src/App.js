@@ -1,5 +1,7 @@
 import Produtos from "./components/Produtos";
 import Cabecalho from "./components/Cabecalho";
+import PesquisaProdutos from "./components/PesquisaProdutos";
+import CarrinhoDeCompras from "./components/CarrinhoDeCompras";
 import "./App.css";
 
 const produtos = [
@@ -27,13 +29,17 @@ function App() {
    return (
     <div className="App">
     
-    <Cabecalho />
-    <div className="tabela-produtos">
+    <Cabecalho /> 
+    <CarrinhoDeCompras />
+    <PesquisaProdutos /> 
+    
+    <div className="lista-produtos">
       <h3 className="subtituloProdutos"> Produtos </h3>
         {
           produtos.map(prod => <Produtos key={prod.codigo} codigo={prod.codigo} descricao={prod.descricao} 
             marca={prod.marca} preco={prod.preco} imagem={prod.urlImagem} />)
         }    
+
       </div> 
  
    </div>
