@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export default function cabecalho () {
+export default function Cabecalho () {
   return (
     <header>
         <div className="logotipo">

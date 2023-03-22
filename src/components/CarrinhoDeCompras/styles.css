@@ -1,0 +1,12 @@
+.cartao-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.botao {
+    width: 70px;
+}

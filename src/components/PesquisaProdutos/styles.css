@@ -41,3 +41,12 @@
     background-color: #0069d9;
   }
   
+
+  .subtituloCarrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 5px;
+    
+
+  }

@@ -1,5 +1,6 @@
 import "./styles.css";
 
+
 export default function Produtos( { codigo, descricao, marca, preco,} ) {
   return (
     <>
