@@ -1,7 +1,6 @@
   import Produtos from "./components/Produtos";
   import Cabecalho from "./components/Cabecalho";
   import PesquisaProdutos from "./components/PesquisaProdutos";
-  import CarrinhoDeCompras from "./components/CarrinhoDeCompras";
   import "./App.css";
   //import { useState } from "react";
 
@@ -24,16 +23,13 @@
     { "codigo": 1016, "descricao": "Travesseiro", "marca": "Nuvem", "preco": 23.00, "imagem": "" }
     ];
   
-
-
-
   function App() {
     return (
-      <div className="App">
+      <section className="App">
           
           <Cabecalho /> 
             
-            <section className="container">
+            <div className="container">
             <div className="container-produtos"> <PesquisaProdutos /> 
             </div>
             
@@ -45,8 +41,8 @@
                 }    
               
               </div> 
-              </section>
-      </div>
+              </div>
+      </section>
           );
     }
 

@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./styles.css";
 
-export default function CarrinhoDeCompras( { codigo, descricao, marca, preco, imagem, quantidade } ) {
+export default function CarrinhoDeCompras( { codigo, descricao, marca, preco, imagem, quantidade, onDelete} ) {
+    const handleDelete = () => {
+        onDelete(codigo);   
+      }
+    
   return (
     <div className='cartao-produto'>
         <img src={imagem} alt='foto do produto' className= 'produto-img' />
@@ -19,7 +24,7 @@ export default function CarrinhoDeCompras( { codigo, descricao, marca, preco, im
         <div>
             Qtde: {quantidade}
         </div>
-        <button className="botao">Excluir</button>
+        <button className="botao" onClick={handleDelete}>Excluir</button>
     </div>
   )
 }
