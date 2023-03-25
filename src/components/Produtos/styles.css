@@ -1,7 +1,7 @@
 .tabela-produtos {
 display: flex;
 flex-direction: column;
-gap: 5px;
+gap: 2px;
 margin: 3px;
 justify-content: flex-start;
 }

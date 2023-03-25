@@ -1,10 +1,10 @@
-import { useState } from "react";
 import "./styles.css";
 
 export default function CarrinhoDeCompras( { codigo, descricao, marca, preco, imagem, quantidade, onDelete} ) {
     const handleDelete = () => {
         onDelete(codigo);   
       }
+      
     
   return (
     <div className='cartao-produto'>
