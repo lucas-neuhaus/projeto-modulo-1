@@ -2,12 +2,16 @@
     display: flex;
     justify-content: center;
     letter-spacing: 5px;
+    position: relative;
+    left: 35px;
 }
 .pesquisa-produto-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
+    left: 30px;
     gap: 10px;
   }
   
@@ -42,13 +46,28 @@
   }
   
 
-  .subtituloCarrinho {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.subtituloCarrinho {
     letter-spacing: 5px;
-    
-
+    position: fixed;
+    right: 800px;
+    bottom: 570px
   }
 
+.carrinho-container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  right: 400px;
+  width: 300px;
+  top: 250px
+  }
+
+.produtosCarrinho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: fixed;
+  right: 580px;
   
+}

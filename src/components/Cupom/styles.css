@@ -1,1 +1,33 @@
 
+.tituloCupom {
+    position: static;
+    letter-spacing: 5px;
+    margin: 15px 90px;
+}
+
+td, th {
+    border: 1px solid bisque;
+    background-color: bisque;
+    text-align: center;
+    padding: 6px;
+  }
+  
+  thead tr {
+    background-color: bisque;
+  }
+  
+  tfoot tr {
+    background-color: bisque;
+    font-weight: bold;
+  }
+  
+  .total {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .cupomContainer {
+    background-color: bisque;
+    border-radius: 5px;
+    
+  }

@@ -1,18 +1,19 @@
+//import Cupom from "../Cupom";
 import "./styles.css";
 
 export default function CarrinhoDeCompras( { codigo, descricao, marca, preco, imagem, quantidade, onDelete} ) {
-    const handleDelete = () => {
-        onDelete(codigo);   
+    const handleExcluir = () => {
+        onDelete(codigo);  
       }
-      
+    
     
   return (
-    <div className='cartao-produto'>
-        <img src={imagem} alt='foto do produto' className= 'produto-img' />
+    <div className="foto-produto">
+        <img src={imagem} alt="foto do produto" className= "produto-img" />
         <div>
             Código: {codigo}
         </div>
-        <div className='produto-descricao'>
+        <div className="produto-descricao">
             {descricao}
         </div>
         <div>
@@ -24,7 +25,7 @@ export default function CarrinhoDeCompras( { codigo, descricao, marca, preco, im
         <div>
             Qtde: {quantidade}
         </div>
-        <button className="botao" onClick={handleDelete}>Excluir</button>
+        <button className="botao" onClick={handleExcluir}>Excluir</button>
     </div>
   )
 }

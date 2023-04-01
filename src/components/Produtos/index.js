@@ -1,17 +1,13 @@
 import "./styles.css";
 
 
-export default function Produtos( { codigo, descricao, marca, preco,} ) {
+export default function Produtos( { codigo, descricao, marca, preco} ) {
   return (
-    <>
     <div className="tabela-produtos">
-                 {codigo} 
-              -  {descricao} - 
+                 {codigo}
+            -    {descricao} - 
         Marca: {marca} -
         R${preco}
     </div>
-        
-    
-    </>
   )
 }
