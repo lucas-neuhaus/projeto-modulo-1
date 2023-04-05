@@ -43,7 +43,7 @@ export default function Cupom({itensCupom, itensCupomEstorno}) {
           ))}
         </tbody>
       </table>
-      <p className="total">Total: R$ {total}</p>
+      <p className="total">Total: R$ {total.toFixed(2)}</p>
     </div>
 
   );
